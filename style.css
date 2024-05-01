@@ -1,35 +1,93 @@
 *{
     font-family: 'Courier New', monospace;
     background-color: rgb(235, 225, 225);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    margin-left: 20px;
+body{
+    background: grey;
+    height: 100vh;
+}
+
+.page1{
+    width: 500px;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .header{
-    font-size: 45px;
-    margin-left: 40px;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
 }
 
-.main-ul{
-    color: orange;
+.recipes-list{
+    list-style-position: inside;
+    text-align: center;
+    line-height: 2;
+    padding: 25px;
 }
 
-.main-ul li a{
-    color: orangered;
+.recipes-list li{
+    list-style-type: none;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.recipes-list li:hover{
+    background-color: tomato;
+    color: brown;
+}
+
+
+.recipes-list a{
     text-decoration: none;
-    font-size: 20px;
-    line-height: 1.6;
-}
-
-.main-ul li a:hover{
     color: black;
+    font-weight: thin;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.recipe-header,
+.back{
+    background-color: rgb(235, 225, 225);
+    height: 100vh;
+}
+
+.recipe-header{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+img{
+    display: block;
+    margin: 15px auto;
+}
+
 .desc,
 .ingred,
 .steps{
-    line-height: 2;
-    color: brown;
-    font-weight: bold;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: tomato;
+    margin: 15px;
 }
+
+p,
+ul,
+ol,
+li{
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
